@@ -108,7 +108,7 @@ async def ask(question: str):
     top_score = scores[top_indices[0]]
 
     # threshold fix
-    if top_score < 0.2:
+    if top_score < 0.1:
         return {"answer": "Not available in document"}
 
     # context
